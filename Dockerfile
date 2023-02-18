@@ -2,6 +2,8 @@ FROM openjdk:16-alpine3.13
 
 WORKDIR /app
 
+RUN chmod +x mvnw.cmd
+
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 
