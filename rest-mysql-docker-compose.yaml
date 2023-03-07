@@ -2,7 +2,7 @@ services:
   # Spring Boot App Service
   spring-boot-app:
     container_name: spring-boot-app-container
-    image: rest-api-mysql:1.0
+    image: lhpfranco/rest-api-mysql:latest
     ports:
       - "8085:8085"
     depends_on:
